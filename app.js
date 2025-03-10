@@ -33,7 +33,7 @@ createDefaultAdmin();
 
 // Enable CORS with credentials
 app.use(cors({
-  origin: 'http://127.0.0.1:5500', // Allow only your frontend origin
+  origin: 'http://localhost:3000', // Allow only your frontend origin
   credentials: true, // Allow credentials (cookies, authorization headers)
 }));
 
