@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Scanner</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Feedback Message -->
+    <div id="feedback" class="feedback"></div>
+
+    <!-- Header -->
+    <header>
+      <h1>Document Scanner</h1>
+    </header>
+
+    <!-- Authentication Section -->
+    <section id="auth" class="auth-section">
+      <h2>Login / Register</h2>
+      <input type="text" id="username" placeholder="Username" class="input-field">
+      <input type="password" id="password" placeholder="Password" class="input-field">
+      <div class="button-group">
+        <button id="loginBtn" class="btn btn-primary">Login</button>
+        <button id="registerBtn" class="btn btn-secondary">Register</button>
+      </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile" class="profile-section" style="display: none;">
+      <h2>Welcome, <span id="usernameDisplay"></span></h2>
+      <p>Credits: <span id="creditsDisplay"></span></p>
+      <button id="logoutBtn" class="btn btn-warning">Logout</button>
+
+      <!-- Credit Request Section -->
+      <div id="creditRequestSection" class="credit-request-section">
+        <h3>Request Additional Credits</h3>
+        <input type="number" id="creditAmount" placeholder="Amount" class="input-field">
+        <button id="requestCreditsBtn" class="btn btn-primary">Request Credits</button>
+        <div id="creditRequestResult" class="result"></div>
+      </div>
+
+      <!-- Document Scanning Section -->
+      <div id="scanSection" class="scan-section">
+        <h3>Document Scanning</h3>
+        <input type="file" id="fileInput" accept=".txt" class="input-field">
+        <button id="scanBtn" class="btn btn-primary">Scan Document</button>
+        <div id="scanResult" class="result"></div>
+      </div>
+    </section>
+
+    <!-- Admin Dashboard -->
+    <section id="admin" class="admin-section" style="display: none;">
+      <h2>Admin Dashboard</h2>
+      <button id="viewAnalyticsBtn" class="btn btn-primary">View Analytics</button>
+      <div id="analyticsResult" class="result"></div>
+
+      <!-- Credit Requests Section -->
+      <div id="creditRequestsSection" class="credit-requests-section">
+        <h3>Pending Credit Requests</h3>
+        <button id="viewCreditRequestsBtn" class="btn btn-primary">View Pending Requests</button>
+        <ul id="creditRequestsList" class="requests-list"></ul>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
