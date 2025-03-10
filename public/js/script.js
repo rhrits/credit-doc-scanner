@@ -1,6 +1,7 @@
 
 
-const BACKEND_URL = "http://localhost:3000";
+const BACKEND_URL = "http://54.86.185.162:3000/";
+
 
 // Function to show feedback messages
 const showFeedback = (message, type = "success") => {
