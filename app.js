@@ -33,7 +33,7 @@ createDefaultAdmin();
 
 // Enable CORS with credentials
 app.use(cors({
-  origin: 'http://54.86.185.162:3000/', // Allow only your frontend origin
+  origin: 'http://localhost:3000', // Allow only your frontend origin
   credentials: true, // Allow credentials (cookies, authorization headers)
 }));
 
@@ -59,5 +59,5 @@ app.use("/admin", adminRoutes);
 // Start the server
 const PORT = 3000;
 app.listen(PORT, () => {
-  console.log(`Server running on http://54.86.185.162:${PORT}`);
+  console.log(`Server running on http://localhost:${PORT}`);
 });
