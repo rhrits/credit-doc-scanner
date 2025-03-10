@@ -58,16 +58,85 @@ The system is self-contained and uses **JSON files** for data storage. It includ
 - **Authentication**: Basic username-password login (hashed passwords)
 - **Text Matching**: Custom algorithm using basic text similarity
 
+
+---
+title: "Setup Guide"
+description: "Steps to run the project locally and details about the deployed version."
+id: "setup"
 ---
 
-## Setup Instructions
+## Steps to Run the Project Locally
 
-### Prerequisites
-1. **Node.js**: Ensure Node.js is installed on your system.
-2. **Git**: Optional, for cloning the repository.
+### 1. **Clone the Repository**
+Clone the project repository to your local machine:
 
-### Steps to Run the Project
-1. **Clone the Repository** (if applicable):
-   ```bash
-   git clone <repository-url>
-   cd <project-folder>
+```bash
+git clone https://github.com/rhrits/credit-doc-scanner
+cd credit-doc-scanner
+```
+
+### 2. **Install Dependencies**
+Navigate to the `credit-doc-scanner` folder and install the required dependencies:
+
+```bash
+cd credit-doc-scanner
+npm install
+```
+
+### 3. **Start the Server**
+Run the Node.js server:
+
+```bash
+node app.js
+```
+
+The server will start at `http://localhost:3000`.
+
+### 4. **Access the Frontend**
+Open your browser and navigate to `http://localhost:3000`.
+
+---
+
+## Testing Instructions
+
+### 1. **Admin Login**
+- **Username**: `admin`
+- **Password**: `admin123`
+
+### 2. **User Registration**
+- Register a new user with a username and password (e.g., `abcd123` / `abcd1234`).
+
+### 3. **User Login**
+- Log in with the registered username and password.
+
+### 4. **Document Upload**
+- Navigate to the **Scan Section**.
+- Upload a plain text file (`.txt`) for scanning.
+- View the scan results.
+
+### 5. **Credit Management**
+- Check your credits in the **Profile Section**.
+- Request additional credits if needed.
+- Log in as an admin to approve/deny credit requests.
+
+### 6. **Admin Dashboard**
+- Log in as an admin.
+- View analytics, credit requests, and user activity.
+
+---
+
+## Deployed Version
+You can also check the deployed version of this project at:
+[https://docscan.hrits.tech/](https://docscan.hrits.tech/)
+
+---
+
+## Notes
+- **Admin Credentials**:
+  - **Username**: `admin`
+  - **Password**: `admin123`
+- **User Registration**: You can create any user with any username and password for scanning `.txt` files.
+- **File Upload**: Only plain text files (`.txt`) are supported for scanning.
+
+---
+
