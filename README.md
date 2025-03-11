@@ -60,12 +60,8 @@ The system is self-contained and uses **JSON files** for data storage. It includ
 
 
 ---
-title: "Setup Guide"
-description: "Steps to run the project locally and details about the deployed version."
-id: "setup"
----
 
-## Steps to Run the Project Locally
+## Steps to run the project locally and details about the deployed version.
 
 ### 1. **Clone the Repository**
 Clone the project repository to your local machine:
