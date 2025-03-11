@@ -1,7 +1,3 @@
----
-title: Credit-Based Document Scanning System
-description: A self-contained document scanning and matching system with a built-in credit system.
----
 
 # Credit-Based Document Scanning System
 
